@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/New_DaonTech/static/js/main.278c29ec.js",
+    "main.js": "/New_DaonTech/static/js/main.00c1f727.js",
     "static/media/DaonBg.jpg": "/New_DaonTech/static/media/DaonBg.3fd408f7be2cba0f7243.jpg",
     "index.html": "/New_DaonTech/index.html",
-    "main.278c29ec.js.map": "/New_DaonTech/static/js/main.278c29ec.js.map"
+    "main.00c1f727.js.map": "/New_DaonTech/static/js/main.00c1f727.js.map"
   },
   "entrypoints": [
-    "static/js/main.278c29ec.js"
+    "static/js/main.00c1f727.js"
   ]
 }
