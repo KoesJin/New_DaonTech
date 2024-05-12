@@ -22,7 +22,7 @@ const FooterText = styled.p`
 export default function Footer() {
     return (
         <FooterContainer>
-            <FooterText>TheBox Company © 2022. All Rights Reserved</FooterText>
+            <FooterText>DaonTech © 2024. All Rights Reserved</FooterText>
         </FooterContainer>
     );
 }

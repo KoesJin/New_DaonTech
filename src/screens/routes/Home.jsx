@@ -5,6 +5,7 @@ import Services from './Services';
 import Bottom from './Bottom';
 import Header from './Header';
 import Footer from './Footer';
+import { Helmet } from 'react-helmet';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -18,6 +19,9 @@ export default function Home() {
     return (
         <>
             <GlobalStyle />
+            <Helmet>
+                <title>DaonTech</title>
+            </Helmet>
             <Header />
             <Hero />
             <Reasons />
