@@ -1,8 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Root from './Root';
 import MainPage from './routes/MainPage';
-import WaytoComPage from './routes/AboutUsPage/WaytoComPage';
+
 import GreetingPage from './Component/GreetingPageComponent';
+import WaytoComePage from './Component/WaytoComeComponent';
 
 const router = createBrowserRouter(
     [
@@ -12,7 +13,7 @@ const router = createBrowserRouter(
             children: [
                 { path: '', element: <MainPage /> },
                 { path: 'greeting', element: <GreetingPage /> },
-                { path: 'waytocome', element: <WaytoComPage /> },
+                { path: 'waytocome', element: <WaytoComePage /> },
             ],
         },
     ],

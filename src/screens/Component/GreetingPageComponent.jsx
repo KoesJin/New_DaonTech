@@ -1,11 +1,13 @@
-import { Container, Title, Content } from '../styled/GreetingStyles';
+import React from 'react';
+import { Container, Title, Content, AddressContainer, AddressItem, AddressText } from '../styled/GreetingStyles';
+import { FaEnvelope, FaPhoneAlt, FaUserTie } from 'react-icons/fa';
 
 export default function GreetingPage() {
     return (
         <Container>
-            <Title>환영합니다</Title>
+            <Title>인사말</Title>
             <Content>
-                안녕하세요
+                안녕하십니까?
                 <br />
                 Daon Tech 홈페이지를 방문해주셔서 감사합니다.
             </Content>
@@ -33,6 +35,25 @@ export default function GreetingPage() {
                 <br />
                 다시 한 번 환영합니다!
             </Content>
+
+            <AddressContainer>
+                <AddressItem>
+                    <FaUserTie />
+                    <AddressText>대표: 조익준</AddressText>
+                </AddressItem>
+                <AddressItem>
+                    <FaPhoneAlt />
+                    <AddressText as="a" href="tel:010-5219-8234">
+                        대표번호: 010-5219-8234
+                    </AddressText>
+                </AddressItem>
+                <AddressItem>
+                    <FaEnvelope />
+                    <AddressText as="a" href="mailto:sfs230@hanmail.net">
+                        이메일: sfs230@hanmail.net
+                    </AddressText>
+                </AddressItem>
+            </AddressContainer>
         </Container>
     );
 }

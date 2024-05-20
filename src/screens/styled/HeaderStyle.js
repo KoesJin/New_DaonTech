@@ -5,13 +5,14 @@ export const Container = styled.div`
     width: 100vw;
     height: 80px;
     position: relative;
-    overflow: visible; /* Ensure dropdowns are visible */
+    overflow: visible;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
-    z-index: 1000; /* Ensure the header is above other elements */
+    z-index: 1000;
+    border-bottom: 2px solid #e0e3eb;
 `;
 
 export const LogoSection = styled.div`
