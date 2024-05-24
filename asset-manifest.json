@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/New_DaonTech/static/css/main.3a4dc53e.css",
-    "main.js": "/New_DaonTech/static/js/main.0d9d3b00.js",
+    "main.js": "/New_DaonTech/static/js/main.adce574a.js",
     "static/media/DaonBg.jpg": "/New_DaonTech/static/media/DaonBg.3fd408f7be2cba0f7243.jpg",
+    "static/media/technology-image.jpg": "/New_DaonTech/static/media/technology-image.83b8a263ef55742d399d.jpg",
+    "static/media/tech-background.png": "/New_DaonTech/static/media/tech-background.882e6927bb416090e9ee.png",
     "static/media/BigLogo.png": "/New_DaonTech/static/media/BigLogo.9d856eb53f505a943d21.png",
+    "static/media/inquiry-background.png": "/New_DaonTech/static/media/inquiry-background.be18bbe4353a7a36f07a.png",
+    "static/media/inquiry-image.jpg": "/New_DaonTech/static/media/inquiry-image.ec3d1ac3ce776d77f329.jpg",
     "index.html": "/New_DaonTech/index.html",
-    "main.3a4dc53e.css.map": "/New_DaonTech/static/css/main.3a4dc53e.css.map",
-    "main.0d9d3b00.js.map": "/New_DaonTech/static/js/main.0d9d3b00.js.map"
+    "main.adce574a.js.map": "/New_DaonTech/static/js/main.adce574a.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a4dc53e.css",
-    "static/js/main.0d9d3b00.js"
+    "static/js/main.adce574a.js"
   ]
 }
