@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
     width: 100vw;
-    height: 157px;
+    height: 160px;
     position: relative;
     overflow: hidden;
     background: rgb(46, 48, 50);

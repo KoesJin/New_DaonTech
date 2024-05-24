@@ -14,7 +14,7 @@ export default function OnlineInquiryTechnology() {
         <Container>
             <Card to="/carbon" onClick={scrollToTop}>
                 <CardImage src={technologyImage} alt="우리의 기술력" />
-                <CardTitle>우리의 기술력</CardTitle>
+                <CardTitle>제품 소개</CardTitle>
             </Card>
             <Card to="/oninquiry" onClick={scrollToTop}>
                 <CardImage src={inquiryImage} alt="온라인 문의" />

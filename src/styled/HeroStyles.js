@@ -1,4 +1,16 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
+
+// 애니메이션 정의
+const fadeIn = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
 
 export const Container = styled.div`
     position: relative;
@@ -18,6 +30,11 @@ export const BackgroundImage = styled.img`
     top: 0;
     left: 0;
     z-index: 1;
+    ${(props) =>
+        props.animate &&
+        css`
+            animation: ${fadeIn} ${(props) => props.duration || '2s'} ease-in-out;
+        `}
 `;
 
 export const Overlay = styled.div`
@@ -28,6 +45,11 @@ export const Overlay = styled.div`
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
+    ${(props) =>
+        props.animate &&
+        css`
+            animation: ${fadeIn} ${(props) => props.duration || '2s'} ease-in-out;
+        `}
 `;
 
 export const TextContainer = styled.div`
@@ -35,6 +57,11 @@ export const TextContainer = styled.div`
     z-index: 3;
     text-align: center;
     color: #fff;
+    ${(props) =>
+        props.animate &&
+        css`
+            animation: ${fadeIn} ${(props) => props.duration || '2s'} ease-in-out;
+        `}
 `;
 
 export const LogoBox = styled.div`
@@ -45,6 +72,11 @@ export const LogoBox = styled.div`
     border: 3px solid #fff;
     padding: 20px;
     position: relative;
+    ${(props) =>
+        props.animate &&
+        css`
+            animation: ${fadeIn} ${(props) => props.duration || '2s'} ease-in-out;
+        `}
 `;
 
 export const Line = styled.div`
@@ -55,6 +87,11 @@ export const Line = styled.div`
     height: 30px;
     border-top: 3px solid #fff;
     border-left: 3px solid #fff;
+    ${(props) =>
+        props.animate &&
+        css`
+            animation: ${fadeIn} ${(props) => props.duration || '2s'} ease-in-out;
+        `}
 `;
 
 export const Title = styled.h2`
@@ -65,7 +102,11 @@ export const Title = styled.h2`
     text-align: center;
     color: #fff;
     font-family: 'Noto Sans KR', sans-serif;
-
+    ${(props) =>
+        props.animate &&
+        css`
+            animation: ${fadeIn} ${(props) => props.duration || '2s'} ease-in-out;
+        `}
     & strong {
         font-weight: 700;
     }

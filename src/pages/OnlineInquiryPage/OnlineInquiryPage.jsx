@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../../Component/HeroComponent';
 import OnlineInquiry from '../../Component/OnlineInquiryPage';
-import onlineInquiryBg from '../../img/inquiry-background.png'; // 새로운 배경 이미지
+import noticeBg from '../../img/notice.jpg'; // 새로운 배경 이미지
 
 export default function OnlineInquiryPage() {
     return (
@@ -9,12 +9,15 @@ export default function OnlineInquiryPage() {
             <Hero
                 title={
                     <>
-                        <h2>온라인 문의</h2>
+                        <h3>고객지원</h3>
                     </>
                 }
+                backgroundImage={noticeBg}
                 showLogoBox={false}
-                backgroundImage={onlineInquiryBg}
                 height="65vh"
+                animateBackground={false} // 배경 이미지 애니메이션 비활성화
+                animateText={true} // 텍스트 애니메이션 활성화
+                animationDuration="1s" // 텍스트 애니메이션 지속 시간 설정
             />
             <OnlineInquiry />
         </>

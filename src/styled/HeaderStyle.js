@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 export const Container = styled.div`
     width: 100vw;
     height: 80px;
-    position: relative;
+    position: fixed; /* fixed로 변경하여 스크롤 고정 */
+    top: 0; /* 상단에 고정 */
+    left: 0;
     overflow: visible;
     background: #fff;
     display: flex;

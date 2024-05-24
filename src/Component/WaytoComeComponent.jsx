@@ -30,6 +30,23 @@ export default function WaytoComePage() {
                     position: markerPosition,
                 });
                 marker.setMap(map);
+
+                // InfoWindow를 추가하여 주소를 표시하고 클릭 이벤트 추가
+                const iwContent =
+                    '<div style="padding:5px; font-size:14px; cursor: pointer;" onmouseover="this.style.textDecoration=\'underline\';" onmouseout="this.style.textDecoration=\'none\';" onclick="window.open(\'https://map.kakao.com/link/map/37.30246,126.8115\', \'_blank\');">경기도 안산시 단원구 원포공원1로 59 신명트윈타워 A동 5층</div>';
+                const iwPosition = new window.kakao.maps.LatLng(37.30246, 126.8115);
+
+                const infowindow = new window.kakao.maps.InfoWindow({
+                    position: iwPosition,
+                    content: iwContent,
+                });
+
+                infowindow.open(map, marker);
+
+                // 마커 클릭 시 카카오 지도 페이지로 이동
+                window.kakao.maps.event.addListener(marker, 'click', () => {
+                    window.open('https://map.kakao.com/link/map/37.30246,126.8115', '_blank');
+                });
             });
         };
         document.head.appendChild(script);

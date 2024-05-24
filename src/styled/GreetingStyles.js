@@ -1,41 +1,44 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 50vw;
+    width: 70vw;
     margin: 0 auto;
-    padding: 80px 80px 30px 80px;
+    padding: 80px 80px 50px 80px;
+    background-color: #fff;
 `;
 
 export const Title = styled.h1`
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #2947a9;
-    border-bottom: 2px solid #f9995d;
-    display: inline-block;
-    padding-bottom: 10px;
+    font-size: 3rem;
+    color: #000;
+    text-align: left;
+    padding-bottom: 50px;
 `;
 
-export const Content = styled.p`
-    font-size: 1.2em;
-    line-height: 1.8;
+export const GreetingContent = styled.div`
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+`;
+
+export const Content = styled.div`
+    font-size: 1.3rem;
+    line-height: 1.6;
     margin-bottom: 20px;
-    text-align: left;
-    color: #555;
-    &:last-child {
-        margin-bottom: 0;
-    }
 `;
 
 export const AddressContainer = styled.div`
-    margin-top: 40px;
-    text-align: left;
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 `;
 
 export const AddressItem = styled.div`
@@ -45,17 +48,26 @@ export const AddressItem = styled.div`
 
     svg {
         margin-right: 10px;
-        color: #2947a9;
+        color: #e74c3c;
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 20px;
     }
 `;
 
-export const AddressText = styled.a`
-    font-size: 1em;
+export const AddressText = styled.div`
+    font-size: 1rem;
     color: #555;
     text-decoration: none;
 
-    &:hover {
-        text-decoration: underline;
-        color: #2947a9;
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 `;
