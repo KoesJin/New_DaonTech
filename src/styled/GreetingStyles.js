@@ -61,13 +61,12 @@ export const AddressText = styled.div`
     font-size: 1rem;
     color: #555;
     text-decoration: none;
-
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
     a {
         color: inherit;
         text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 `;
