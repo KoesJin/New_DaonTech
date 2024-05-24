@@ -22,46 +22,45 @@ export const LogoSection = styled.div`
 
 export const NavWrapper = styled.div`
     display: flex;
-    flex: 1;
     justify-content: center;
+    width: 100%;
 `;
 
 export const Nav = styled.div`
     display: flex;
     align-items: center;
     gap: 50px;
-    position: relative; /* For positioning the dropdown menu */
+    padding: 0 40px; /* 양쪽 여백을 40px로 설정 */
 `;
 
 export const NavItem = styled.div`
     position: relative;
-    flex-grow: 0;
-    flex-shrink: 0;
     font-size: 1.2rem;
-    text-align: left;
+    text-align: center;
     color: #14171f;
     text-decoration: none;
     cursor: pointer;
-    margin-right: 80px;
+    margin: 0 20px; /* NavItem 간의 간격을 40px로 설정 (좌우 20px씩) */
 
     &:hover > ul {
         display: block;
+        animation: fadeIn 0.3s ease-in-out; /* 애니메이션 추가 */
     }
 `;
 
 export const SpecialNavItem = styled.a`
     position: relative;
-    flex-grow: 0;
-    flex-shrink: 0;
     font-size: 1.2rem;
-    text-align: left;
+    text-align: center;
     color: #f9995d;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
+    margin: 0 20px; /* SpecialNavItem 간의 간격을 40px로 설정 (좌우 20px씩) */
 
     &:hover > ul {
         display: block;
+        animation: fadeIn 0.3s ease-in-out; /* 애니메이션 추가 */
     }
 `;
 
@@ -102,6 +101,17 @@ export const DropdownMenu = styled.ul`
 
         &:hover {
             background-color: #f1f1f1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 `;

@@ -5,6 +5,7 @@ import MainPage from '../pages/MainPage';
 import GreetingPage from '../Component/GreetingPageComponent';
 import WaytoComePage from '../Component/WaytoComeComponent';
 import CarbonNanoTubePage from '../pages/IntroductionItemPage/CarbonNanoTubePage';
+import OnlineInquiryPage from '../pages/OnlineInquiryPage/OnlineInquiryPage';
 
 const router = createBrowserRouter(
     [
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
                 { path: 'greeting', element: <GreetingPage /> },
                 { path: 'waytocome', element: <WaytoComePage /> },
                 { path: 'carbon', element: <CarbonNanoTubePage /> },
+                { path: 'oninquiry', element: <OnlineInquiryPage /> },
             ],
         },
     ],

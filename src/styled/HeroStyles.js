@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     position: relative;
     width: 100vw;
-    height: 80vh;
+    height: ${(props) => props.height || '80vh'};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,15 +69,4 @@ export const Title = styled.h2`
     & strong {
         font-weight: 700;
     }
-`;
-
-export const Subtitle = styled.h3`
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Noto Sans KR', sans-serif;
 `;

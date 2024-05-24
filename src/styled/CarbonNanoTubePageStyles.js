@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 70vw;
     padding: 80px 80px 30px 80px;
     margin: auto;
 `;
@@ -14,10 +14,8 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h2`
-    font-size: 1.5rem;
-    color: #555;
-    text-align: left;
-    margin-bottom: 40px;
+    font-size: 1.3rem;
+    padding-bottom: 60px;
 `;
 
 export const Section = styled.div`

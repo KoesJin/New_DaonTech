@@ -40,14 +40,9 @@ export default function Header() {
                             <li>스마트팩토리 센서 및 부품</li>
                         </DropdownMenu>
                     </NavItem>
-                    <NavItem>
-                        자료실
-                        <DropdownMenu>
-                            <li>Carbon Nanotube 스마트 섬유</li>
-                            <li>스마트팩토리 센서</li>
-                            <li>스마트팩토리 부품</li>
-                        </DropdownMenu>
-                    </NavItem>
+                    <StyledLink to="/oninquiry">
+                        <NavItem>온라인 문의</NavItem>
+                    </StyledLink>
                     <NavItem>
                         커뮤니티
                         <DropdownMenu>

@@ -21,7 +21,7 @@ export default function CarbonNanoTubePageCoponent() {
     return (
         <Container>
             <Title>CNT</Title>
-            <Subtitle>끊임없는 기술개발과 투자를 통해 기업의 지속가능 경영을 실현합니다.</Subtitle>
+            <Subtitle>DaonTech에서는 끊임없는 기술개발과 투자를 통해 기업의 지속가능 경영을 실현합니다.</Subtitle>
 
             <Section>
                 <SectionTitle>당사 CNT 기술(탄소나노튜브 방식)의 특징</SectionTitle>

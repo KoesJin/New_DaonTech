@@ -3,18 +3,34 @@ import Header from './Component/HeaderComponet';
 import Bottom from './Component/BottomComponent';
 import { createGlobalStyle, styled } from 'styled-components';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import './css/animations.css';
 
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-}
+    box-sizing: border-box;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+
+  .fade-exit {
+    opacity: 1;
+  }
+
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 250ms ease-out;
+  }
 `;
 
 const AnimationContainer = styled.div`
-    position: relative;
     width: 100%;
     height: 100%;
 `;

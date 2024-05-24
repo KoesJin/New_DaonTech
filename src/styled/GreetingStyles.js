@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
     text-align: center;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-height: 80vh; /* 전체 화면 높이 */
+    width: 50vw;
+    margin: 0 auto;
+    padding: 80px 80px 30px 80px;
 `;
 
 export const Title = styled.h1`
