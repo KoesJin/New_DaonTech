@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
     Container,
     NavWrapper,
@@ -17,8 +18,37 @@ export default function Header() {
             top: 0,
         });
     };
+
+    const handleMenuClick = (e, path) => {
+        if (path === '/qna' || path === '/free') {
+            e.preventDefault();
+            alert('준비중입니다.');
+        } else {
+            scrollToTop();
+        }
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            const zoomLevel = Math.round(window.devicePixelRatio * 100);
+            const header = document.querySelector('#header-container');
+            if (zoomLevel >= 350) {
+                header.style.display = 'none';
+            } else {
+                header.style.display = 'flex';
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // initial check
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
-        <Container>
+        <Container id="header-container">
             <LogoSection>
                 <img src={logoImage} style={{ height: '40px' }} alt="DaonTech 로고" />
                 <Logo to="/" onClick={scrollToTop}>
@@ -76,12 +106,12 @@ export default function Header() {
                         커뮤니티
                         <DropdownMenu>
                             <li>
-                                <StyledLink to="/qna" onClick={scrollToTop}>
+                                <StyledLink to="/qna" onClick={(e) => handleMenuClick(e, '/qna')}>
                                     Q&A
                                 </StyledLink>
                             </li>
                             <li>
-                                <StyledLink to="/free" onClick={scrollToTop}>
+                                <StyledLink to="/free" onClick={(e) => handleMenuClick(e, '/free')}>
                                     자유게시판
                                 </StyledLink>
                             </li>

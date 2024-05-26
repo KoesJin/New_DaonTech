@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Component/HeaderComponet';
 import Bottom from './Component/BottomComponent';
+import TopButton from './Component/TopButton';
 import { createGlobalStyle, styled } from 'styled-components';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -51,6 +52,7 @@ function Root() {
                 </CSSTransition>
             </TransitionGroup>
             <Bottom />
+            <TopButton />
         </>
     );
 }

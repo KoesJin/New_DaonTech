@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 export const Container = styled.div`
     width: 100vw;
     height: 80px;
-    position: fixed; /* fixed로 변경하여 스크롤 고정 */
-    top: 0; /* 상단에 고정 */
+    position: fixed;
+    top: 0;
     left: 0;
     overflow: visible;
     background: #fff;
@@ -15,24 +15,46 @@ export const Container = styled.div`
     padding: 0 80px;
     z-index: 1000;
     border-bottom: 2px solid #e0e3eb;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        padding: 0 20px;
+    }
 `;
 
 export const LogoSection = styled.div`
     display: flex;
     align-items: center;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 `;
 
 export const NavWrapper = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
+
+    @media (max-width: 768px) {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 `;
 
 export const Nav = styled.div`
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 0 40px; /* 양쪽 여백을 40px로 설정 */
+    padding: 0 40px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
 `;
 
 export const NavItem = styled.div`
@@ -42,11 +64,16 @@ export const NavItem = styled.div`
     color: #14171f;
     text-decoration: none;
     cursor: pointer;
-    margin: 0 20px; /* NavItem 간의 간격을 40px로 설정 (좌우 20px씩) */
+    margin: 0 20px;
 
     &:hover > ul {
         display: block;
-        animation: fadeIn 0.3s ease-in-out; /* 애니메이션 추가 */
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+        margin: 0;
+        font-size: 1rem;
     }
 `;
 
@@ -58,11 +85,16 @@ export const SpecialNavItem = styled.a`
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    margin: 0 20px; /* SpecialNavItem 간의 간격을 40px로 설정 (좌우 20px씩) */
+    margin: 0 20px;
 
     &:hover > ul {
         display: block;
-        animation: fadeIn 0.3s ease-in-out; /* 애니메이션 추가 */
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+        margin: 0;
+        font-size: 1rem;
     }
 `;
 
@@ -74,6 +106,11 @@ export const Logo = styled(Link)`
     color: #2947a9;
     text-decoration: none;
     margin-left: 8px;
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
 `;
 
 export const StyledLink = styled(Link)`
@@ -88,13 +125,13 @@ export const StyledLink = styled(Link)`
 export const DropdownMenu = styled.ul`
     display: none;
     position: absolute;
-    top: 100%; /* Position below the NavItem */
+    top: 100%;
     left: 0;
     background: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     padding: 10px 0;
     list-style: none;
-    z-index: 10000; /* Ensure dropdown is above other elements */
+    z-index: 10000;
 
     & > li {
         padding: 8px 16px;
