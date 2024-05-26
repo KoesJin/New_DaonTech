@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/New_DaonTech/static/js/main.3b7854a1.js",
+    "main.js": "/New_DaonTech/static/js/main.7f04ebf8.js",
     "static/media/SectionBg.png": "/New_DaonTech/static/media/SectionBg.062cbd584868b4ccb369.png",
     "static/media/mainnotice.png": "/New_DaonTech/static/media/mainnotice.5bd50192ed4416d02079.png",
     "static/media/DaonBg.jpg": "/New_DaonTech/static/media/DaonBg.3fd408f7be2cba0f7243.jpg",
@@ -11,6 +11,6 @@
     "index.html": "/New_DaonTech/index.html"
   },
   "entrypoints": [
-    "static/js/main.3b7854a1.js"
+    "static/js/main.7f04ebf8.js"
   ]
 }
