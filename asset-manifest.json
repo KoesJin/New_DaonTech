@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/New_DaonTech/static/js/main.c023dfcd.js",
+    "main.js": "/New_DaonTech/static/js/main.3b7854a1.js",
     "static/media/SectionBg.png": "/New_DaonTech/static/media/SectionBg.062cbd584868b4ccb369.png",
     "static/media/mainnotice.png": "/New_DaonTech/static/media/mainnotice.5bd50192ed4416d02079.png",
     "static/media/DaonBg.jpg": "/New_DaonTech/static/media/DaonBg.3fd408f7be2cba0f7243.jpg",
@@ -8,10 +8,9 @@
     "static/media/notice.jpg": "/New_DaonTech/static/media/notice.cf4834465a70011c6cd7.jpg",
     "static/media/BigLogo.png": "/New_DaonTech/static/media/BigLogo.9d856eb53f505a943d21.png",
     "static/media/inquiry-image.jpg": "/New_DaonTech/static/media/inquiry-image.ec3d1ac3ce776d77f329.jpg",
-    "index.html": "/New_DaonTech/index.html",
-    "main.c023dfcd.js.map": "/New_DaonTech/static/js/main.c023dfcd.js.map"
+    "index.html": "/New_DaonTech/index.html"
   },
   "entrypoints": [
-    "static/js/main.c023dfcd.js"
+    "static/js/main.3b7854a1.js"
   ]
 }
