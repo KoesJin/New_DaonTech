@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Card, CardImage, CardTitle } from '../styled/OnlineInquiryTechnologyStyles';
-import technologyImage from '../img/technology-image.jpg';
+import mainnotice from '../img/mainnotice.png';
 import inquiryImage from '../img/inquiry-image.jpg';
+import { GrayBg } from '../styled/MainWaytoComePageStyles';
 
 export default function OnlineInquiryTechnology() {
     const scrollToTop = () => {
@@ -11,15 +12,17 @@ export default function OnlineInquiryTechnology() {
     };
 
     return (
-        <Container>
-            <Card to="/carbon" onClick={scrollToTop}>
-                <CardImage src={technologyImage} alt="우리의 기술력" />
-                <CardTitle>제품 소개</CardTitle>
-            </Card>
-            <Card to="/oninquiry" onClick={scrollToTop}>
-                <CardImage src={inquiryImage} alt="온라인 문의" />
-                <CardTitle>온라인 문의</CardTitle>
-            </Card>
-        </Container>
+        <GrayBg>
+            <Container>
+                <Card to="/oninquiry" onClick={scrollToTop}>
+                    <CardImage src={inquiryImage} alt="온라인 문의" />
+                    <CardTitle>온라인 문의</CardTitle>
+                </Card>
+                <Card to="/notice" onClick={scrollToTop}>
+                    <CardImage src={mainnotice} alt="우리의 기술력" />
+                    <CardTitle>제품 소개</CardTitle>
+                </Card>
+            </Container>
+        </GrayBg>
     );
 }

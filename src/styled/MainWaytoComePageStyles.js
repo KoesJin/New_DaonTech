@@ -2,12 +2,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const GrayBg = styled.div`
-    body {
-        background-color: rgb(248, 248, 248);
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
+    background-color: rgb(248, 248, 248);
+    margin: 0;
+    padding: 0;
 `;
 
 export const Container = styled.div`

@@ -57,6 +57,7 @@ export const TextContainer = styled.div`
     z-index: 3;
     text-align: center;
     color: #fff;
+    padding-top: 80px;
     ${(props) =>
         props.animate &&
         css`
@@ -70,7 +71,7 @@ export const LogoBox = styled.div`
     align-items: center;
     justify-content: center;
     border: 3px solid #fff;
-    padding: 20px;
+    padding: 20px 20px 20px; /* 패딩을 60px 20px 20px으로 변경하여 아래로 40px 만큼 내림 */
     position: relative;
     ${(props) =>
         props.animate &&

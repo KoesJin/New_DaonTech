@@ -1,7 +1,8 @@
 import React from 'react';
 import Hero from '../../Component/HeroComponent';
-import OnlineInquiry from '../../Component/OnlineInquiryPage';
+
 import noticeBg from '../../img/notice.jpg'; // 새로운 배경 이미지
+import OnlineInquiry from '../../Component/OnlineInquiryComponent';
 
 export default function OnlineInquiryPage() {
     return (

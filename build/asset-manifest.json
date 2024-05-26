@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/New_DaonTech/static/js/main.dbc94795.js",
+    "main.js": "/New_DaonTech/static/js/main.6ecd770c.js",
+    "static/media/SectionBg.png": "/New_DaonTech/static/media/SectionBg.062cbd584868b4ccb369.png",
+    "static/media/mainnotice.png": "/New_DaonTech/static/media/mainnotice.5bd50192ed4416d02079.png",
     "static/media/DaonBg.jpg": "/New_DaonTech/static/media/DaonBg.3fd408f7be2cba0f7243.jpg",
     "static/media/tech-background.png": "/New_DaonTech/static/media/tech-background.4589703494729363fe13.png",
-    "static/media/technology-image.jpg": "/New_DaonTech/static/media/technology-image.83b8a263ef55742d399d.jpg",
     "static/media/notice.jpg": "/New_DaonTech/static/media/notice.cf4834465a70011c6cd7.jpg",
     "static/media/BigLogo.png": "/New_DaonTech/static/media/BigLogo.9d856eb53f505a943d21.png",
     "static/media/inquiry-image.jpg": "/New_DaonTech/static/media/inquiry-image.ec3d1ac3ce776d77f329.jpg",
-    "index.html": "/New_DaonTech/index.html",
-    "main.dbc94795.js.map": "/New_DaonTech/static/js/main.dbc94795.js.map"
+    "index.html": "/New_DaonTech/index.html"
   },
   "entrypoints": [
-    "static/js/main.dbc94795.js"
+    "static/js/main.6ecd770c.js"
   ]
 }

@@ -1,5 +1,5 @@
 import Hero from '../../Component/HeroComponent';
-import NoticeComponent from '../../Component/NoticeComponent';
+import NoticeComponent from '../../Component/NoticePageComponent';
 import noticeBg from '../../img/notice.jpg';
 
 export default function NoticePage() {

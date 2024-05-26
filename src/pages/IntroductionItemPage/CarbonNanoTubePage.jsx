@@ -1,5 +1,5 @@
 import React from 'react';
-import CarbonNanoTubePageComponent from '../../Component/CarbonNanoTubePageComponent';
+import CarbonNanoTubePageComponent from '../../Component/CarbonNanoTubePageCoponent';
 import Hero from '../../Component/HeroComponent';
 import techbackground from '../../img/tech-background.png';
 

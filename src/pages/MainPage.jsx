@@ -1,9 +1,11 @@
 import { Helmet } from 'react-helmet';
 import Hero from '../Component/HeroComponent';
-import Reasons from '../Component/ReasonsCoponent';
-import Services from '../Component/ServicesComponet';
-import OnlineInquiryTechnology from '../Component/OnlineInquiryTechnology';
 import MainWaytoComePageComponent from '../Component/MainWaytoComePageComponent';
+import OnlineInquiryTechnology from '../Component/OnlineInquiryTechnology';
+import TopButton from '../Component/TopButton';
+import MainSection from '../Component/MainSectionComponet';
+import MainSmartFactory from '../Component/MainSmartFactoryComponent';
+import MainSmartSensor from '../Component/MainSmartSensorComponent';
 
 export default function MainPage() {
     return (
@@ -12,10 +14,12 @@ export default function MainPage() {
                 <title>DaonTech</title>
             </Helmet>
             <Hero />
-            <Reasons />
-            <OnlineInquiryTechnology />
-            <Services />
+            <MainSmartFactory />
+            <MainSmartSensor />
+            <MainSection />
             <MainWaytoComePageComponent />
+            <OnlineInquiryTechnology />
+            <TopButton />
         </>
     );
 }

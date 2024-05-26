@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+export const GrayBg = styled.div`
+    background-color: rgb(248, 248, 248);
+    margin: 0;
+    padding: 0;
+`;
+
 export const Container = styled.div`
     display: flex;
     justify-content: space-around;
-    padding: 5vh 10vw;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0px 0px 100px 0px;
     background-color: #f8f8f8;
 `;
 

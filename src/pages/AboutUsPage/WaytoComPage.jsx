@@ -1,5 +1,5 @@
 import Hero from '../../Component/HeroComponent';
-import WaytoComePageComponent from '../../Component/WaytoComeComponent';
+import WaytoComePageComponent from '../../Component/WaytoComePageComponent';
 import daonBg from '../../img/DaonBg.jpg';
 
 export default function WaytoCome() {
